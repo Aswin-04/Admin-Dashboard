@@ -10,6 +10,13 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
 img {
     width: 30px;
     height: 30px;
@@ -21,38 +28,37 @@ img {
 }
 
 .dash-board {
-    width: 300px;
-    height: 100vh;
+    grid-row: 1 / 3;
 
     border: 1px solid red;
-    padding: 24px;
+    padding: 24px 16px;
     background-color: skyblue;
 
     display: flex;
     flex-direction: column;
     gap: 56px;
 
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: bold;
 
 }
 .db-item-1 p {
-    font-size: 24px;
+    font-size: 2rem;
 }
 
 .db-item-2,
 .db-item-3{
-    display: grid;
-    align-content: start;
+    display: flex;
+    flex-direction: column;
     gap: 24px;
 }
 
 .db-item-1,
 .item {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
     align-items: center;
-    gap: 16px;
+    column-gap: 16px;
 }
 
 .db-item-1 img,
@@ -61,6 +67,92 @@ img {
 }
 
 
+.header {
+    grid-template-columns: 2 / 3;
+    border: 1px solid red;
+    padding: 24px 64px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.header-item-1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+.header-item-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+img.batman-1 {
+    min-height: 56px;
+    min-width: 56px;
+}
+
+img.batman-2 {
+    height: 96px;
+    width: 96px;
+}
+
+.hd-part-1 {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    /* border: 1px solid red; */
+} 
+
+.hd-part-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.hd-part-2 p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hd-part-3 {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.line-2 {
+    font-size: 2rem;
+}
+.hd-part-4 {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 80%;
+    height: 40px;
+    align-self: stretch;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    background-color: #e5e7eb;
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background-color: skyblue;
+    font-weight: bold;
+}
 
 
 
